@@ -48,7 +48,6 @@ body {
     }
 }
 
-
 #listFilms {
     display: flex;
     flex-flow: row wrap;
@@ -59,7 +58,6 @@ body {
     margin-right: 25px;
     li {
         list-style: none;
-        
         padding-top: 10px;
         a {
             text-decoration: none;
@@ -79,4 +77,3 @@ body {
         }
     }
 }
-

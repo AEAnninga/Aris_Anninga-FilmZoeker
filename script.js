@@ -103,6 +103,5 @@ const addEventListeners = () => {
     Array.from(radioButtons).forEach(item => {
         item.addEventListener('change', handleOnChangeEvent);
     })
-
 } 
 addEventListeners();
