@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url(../font_family/Comfortaa_Regular.ttf);
+}
+
+body {
+    background: rgb(24, 24, 24);
+    color: whitesmoke;
+    font-family: Comfortaa-Regular;
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        h1 {
+            padding: 25px;
+        }
+    }
+}
+
+.radio-button-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    font-family: Comfortaa-Regular;
+    li {
+        list-style: none;
+
+    }
+}
+
+.search-field {
+    label {
+        margin-right: 10px;
+    }
+    input {
+        font-family: Comfortaa-Regular;
+        padding: 5px;
+        border-radius: 5px;
+        outline: none;
+        font-weight: bold;  
+    }
+}
+
+
+#listFilms {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;  
+    margin-left: 25px;
+    margin-right: 25px;
+    li {
+        list-style: none;
+        
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+            :hover {
+                transform: rotateY(10deg) translateY(-5px);
+                box-shadow: 0 0 10px whitesmoke;
+                border-radius: 5px;
+                transition: all 300ms;
+            }
+            img {
+                height: 400px;
+                width: 300px;
+                border-radius: 5px;   
+            }
+        }
+    }
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Anningast Filmzoeker</title>
+      <script defer type="text/javascript" src="movies.js"></script>
+      <script defer type="text/javascript" src="script.js"></script>
+      <link rel="stylesheet" href="CSS/main.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="welcome">Welkom bij de Anningast Filmzoeker</h1>      
+        </header>
+        <nav>
+            <ul class="radio-button-list">
+                <li class="radio-button-list__item">
+                    <input type="radio" id="alle-films-button" name="radioButtonFilter" value="alleFilms"></input>
+                    <label for="alle-films">Alle Films</label>
+                </li>
+                <li class="radio-button-list__item">
+                    <input type="radio" id="laatste-films-2014-button" name="radioButtonFilter" value="2014"></input>
+                    <label for="laatste-films">Nieuwste Films (vanaf 2014)</label>
+                </li>
+                <li class="radio-button-list__item">
+                    <input type="radio" id="avenger-films-button" name="radioButtonFilter" value="Avengers"></input>
+                    <label for="avenger-films">Avenger Films</label>
+                </li>
+                <li class="radio-button-list__item">
+                    <input type="radio" id="x-men-films-button" name="radioButtonFilter" value="X-Men"></input>
+                    <label for="x-men-films">X-Men Films</label>
+                </li>
+                <li class="radio-button-list__item">
+                    <input type="radio" id="princess-films-button" name="radioButtonFilter" value="Princess"></input>
+                    <label for="princess-films">Princess Films</label>
+                </li>
+                <li class="radio-button-list__item">
+                    <input type="radio" id="batman-films-button" name="radioButtonFilter" value="Batman"></input>
+                    <label for="batman-films">Batman Films</label>
+                </li>
+                <li class="search-field">
+                    <label for="search-films">Zoek Film: </label>
+                    <input type="search" id="search-films"></input>
+                    
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <ul id="listFilms">
+
+            </ul>
+        </main>
+    </body>
+</html>
