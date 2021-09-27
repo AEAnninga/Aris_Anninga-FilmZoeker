@@ -69,7 +69,9 @@ const getMoviesBySearch = () => {
     console.log(searchValue);
     let moviesBySearch = [];
     movies.forEach(film => {
-        if (film.Title.toLowerCase().includes(searchValue.toLowerCase()) === true | film.Year.includes(searchValue) === true | film.imdbID.toLowerCase().includes(searchValue.toLowerCase()) === true) {
+        if (film.Title.toLowerCase().includes(searchValue.toLowerCase()) === true | 
+            film.Year.includes(searchValue) === true | 
+            film.imdbID.toLowerCase().includes(searchValue.toLowerCase()) === true) {
             moviesBySearch.push(film);
         } else {
             console.log('Deze titel hoort er niet bij');
